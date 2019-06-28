@@ -21,7 +21,7 @@ h1 {
 .btn {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 300px;

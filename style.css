@@ -12,6 +12,7 @@ body {
 	background-size: cover;
 	transition: all 1s;
 	overflow:hidden;
+	margin: 0px;
 }
 h1 {
 	color: white;

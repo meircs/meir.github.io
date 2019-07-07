@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Javascript + DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div>
-  <nav class="zone green sticky">
-  			<ul class="navbar">
-  				<li><a href="https://www.w3schools.com/html/">About</a></li>
-  				<li><a href="https://www.apple.com">Products</a></li>
-  				<li><a href="https://www.microsoft.com">Our Team</a></li>
-  				<li class="push" ><a href="https://www.microsoft.com">Contacts</a></li>
-  			</ul>
-  	</nav>
-  </div>
-  <div class="zone container"><img class="cover" src="cover.png"></div>
-  	<div class="zone grid-wrapper">
-	    <div class="box zone"><img src="./img/files_2.png"></div>
-	    <div class="box zone"><img src="./img/server_2_2.png"></div>
-	    <div class="box zone"><img src="./img/monitor_settings_2.png"></div>
-	    <div class="box zone"><img src="./img/server_3.png"></div>
-	    <div class="box zone"><img src="./img/data_storage_2_2.png"></div>
-	    <div class="box zone"><img src="./img/monitor_coding_2.png"></div>
-	    <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
-	    <div class="box zone"><img src="./img/server_safe_2.png"></div>
-  	</div>
-  <div class="zone ">
-  	<footer><strong>Made by Meiirkhan Zhalel</strong></footer>
-  </div>
-</div>
+	<h1>Shopping List</h1>
+	<p id="first">Get it done today</p>
+	<input id="userinput" type="text" placeholder="enter items" name="">
+	<button id="enter">Enter</button>
+	<ul class = "list">
+		<li class="bold" random="23">Notebook <button class="delete">Delete</button> </li>
+		<li class="delete">Jello <button class="delete">Delete</button></li>
+		<li class="delete">Spinach <button class="delete">Delete</button></li>
+		<li class="delete">Rice <button class="delete">Delete</button></li>
+		<li class="delete">Birthday Cake <button class="delete">Delete</button></li>
+		<li class="delete">Candles <button class="delete">Delete</button></li>
+	</ul>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

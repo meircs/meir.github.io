@@ -7,25 +7,25 @@ var ul = document.querySelector("ul");
 function inputLength() {
 	return input.value.length;
 }
-// function first() {
-// 	for (var i = 0; i < li.length; i++) {
-// 		console.log("click");
-// 		li[i].addEventListener("click", function () {
-// 			 this.classList.toggle('done');
-// 		})
-// }
-// }
+
+	var li = document.querySelectorAll("li");
+	for (var i = 0; i < li.length; i++) {
+		console.log("click");
+		li[i].addEventListener("click", function () {
+			 this.classList.toggle('done');
+		})
+}
 
 
 function createListElement() {
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	ul.appendChild(li);
+	var lit = document.createElement("li");
+	lit.appendChild(document.createTextNode(input.value));
+	ul.appendChild(lit);
 	input.value = "";
 	var btn = document.createElement("button");
 	btn.classList.add("delete");
 	btn.appendChild(document.createTextNode("delete"));
-	li.appendChild(btn);
+	lit.appendChild(btn);
 	again();
 	// btn.addEventListener("click", function () {
 	// 		 this.classList.toggle('done');
@@ -53,7 +53,6 @@ function addListAfterKeypress(event) {
 	createListElement();
 }
 }
-
 
 button.addEventListener("click", addListAfterClick)
 

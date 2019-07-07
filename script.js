@@ -1,7 +1,6 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var li = document.querySelectorAll("li");
 
 
 
@@ -28,12 +27,13 @@ function createListElement() {
 	btn.appendChild(document.createTextNode("delete"));
 	li.appendChild(btn);
 	again();
-	btn.addEventListener("click", function () {
+	// btn.addEventListener("click", function () {
 	// 		 this.classList.toggle('done');
-	})
+	// })
 }
 
 function again() {
+	var li = document.querySelectorAll("li");
 	for (var i = 0; i < li.length; i++) {
 		console.log(li.length);
 		li[i].addEventListener("click", function () {
